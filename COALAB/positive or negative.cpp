@@ -3,7 +3,8 @@ using namespace std;
 
 int main()
 {
-    int num = 96;
+    int n;
+    int num = n;
     
     //Conditions to check if the number is negative or positive
     if (num > 0)
