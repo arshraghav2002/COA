@@ -1,22 +1,17 @@
-#include <stdio.h>
-
+#include <iostream>
+using namespace std;
 int main() {
-
-    int n1, n2, i, gcd, lcm;
-
-    printf("Enter two positive integers: ");
-    scanf("%d %d", &n1, &n2);
-
-    // loop to find the GCD
-    for (i = 1; i <= n1 && i <= n2; ++i) {
-        
-        // check if i is a factor of both integers
-        if (n1 % i == 0 && n2 % i == 0)
-            gcd = i;
-    }
-
-    lcm = (n1 * n2) / gcd;
-
-    printf("The LCM of two numbers %d and %d is %d.", n1, n2, lcm);
-    return 0;
+   int a=7, b=5, lcm;
+   if(a>b)
+   lcm = a;
+   else
+   lcm = b;
+   while(1) {
+      if( lcm%a==0 && lcm%b==0 ) {
+         cout<<"The LCM of "<<a<<" and "<<b<<" is "<<lcm;
+         break;
+      }
+      lcm++;
+   }
+   return 0;
 }
